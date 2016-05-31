@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>WinterFell Entry Check</h1>
+
+<p>Enter Your Full NAme </p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x, text;
+
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("numb").value;
+
+        // If x is Not a Number or less than one or greater than 10
+        if (isNaN(x)) {
+            g = x.includes("Stark");
+            f = x.includes("Jon");
+
+
+            if (g == true) {
+                text = "welcome lord stark ! the north remembers";
+            }
+            else if (f == true)
+            {
+                text="Welcome Lord Commander";
+            }
+            else
+            {
+              text="kill the lannister";
+            }
+            //text = "Input not valid";
+        } else {
+            text = "I said only name !!! Man are u even from westeros";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>
+
